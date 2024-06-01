@@ -243,17 +243,6 @@ require('lazy').setup({
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
 
-  -- neotest plugin, for running tests
-  {
-    'nvim-neotest/neotest',
-    dependencies = {
-      'nvim-neotest/nvim-nio',
-      'nvim-lua/plenary.nvim',
-      'antoinemadec/FixCursorHold.nvim',
-      'nvim-treesitter/nvim-treesitter',
-    },
-  },
-
   -- conflict resolution plugin
   { 'akinsho/git-conflict.nvim', version = '*', config = true },
 
@@ -566,8 +555,7 @@ require('lazy').setup({
           -- code, if the language server you are using supports them
           --
           -- This may be unwanted, since they displace some of your code
-          --
-          -- NOTE: This doesn't work!
+          -- But I like it!
           if client and client.server_capabilities.inlayHintProvider then
             vim.lsp.inlay_hint.enable(true, { bufnr = 0 })
           end
