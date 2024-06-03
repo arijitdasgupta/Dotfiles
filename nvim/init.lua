@@ -1,4 +1,4 @@
---[[
+--[[init
 
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
@@ -299,6 +299,25 @@ require('lazy').setup({
       require('which-key').register({
         ['<leader>h'] = { 'Git [H]unk' },
       }, { mode = 'v' })
+    end,
+  },
+  -- Testing system
+  -- So that I can quickly run tests
+  {
+    'nvim-neotest/neotest',
+    dependencies = {
+      'nvim-neotest/nvim-nio',
+      'nvim-lua/plenary.nvim',
+      'antoinemadec/FixCursorHold.nvim',
+      'nvim-treesitter/nvim-treesitter',
+      'rouge8/neotest-rust',
+    },
+    config = function()
+      require('neotest').setup {
+        adapters = {
+          require 'neotest-rust',
+        },
+      }
     end,
   },
 
