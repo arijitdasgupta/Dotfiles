@@ -243,7 +243,10 @@ require('lazy').setup({
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
 
+  -- For editing filesystem
+
   -- conflict resolution plugin
+  { 'stevearc/oil.nvim', opts = {} },
   { 'akinsho/git-conflict.nvim', version = '*', config = true },
 
   -- Here is a more advanced example where we pass configuration
