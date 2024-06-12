@@ -999,3 +999,10 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- User command, force inlay hints, in case it's not working
+vim.api.nvim_create_user_command('ForceInlayHintOnCurrentBuffer', function()
+  vim.lsp.inlay_hint.enable(true, { bufnr = 0 })
+end, {
+  desc = 'Forces inline hints if LSP is attached, can throw error',
+})
