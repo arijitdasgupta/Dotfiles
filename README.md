@@ -1,11 +1,11 @@
 # Dotfiles
 
-My dotfiles!
+I am Arijit Dasgupta, and these are my Dotfiles.
 
 ## Initial steps
 - Install powerline patched fonts.
 - After starting tmux first time, make sure to press `prefix + I` to install stuff.
 
 ## TODO
-- [ ] Move tpm as a submodule
-- [ ] Move kitty-themes as submodules
+- [ ] Write instructions for submodule
+- [ ] Move ZSH in the config system
