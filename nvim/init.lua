@@ -1018,3 +1018,16 @@ vim.api.nvim_create_user_command('ColorWave', function()
 end, {
   desc = 'sets colorscheme to kanagawa wave variant',
 })
+
+-- Relative line numbering system
+vim.api.nvim_create_user_command('RelativeNumberYes', function()
+  vim.opt.relativenumber = true
+end, {
+  desc = 'enables relative line numbering',
+})
+
+vim.api.nvim_create_user_command('RelativeNumberNo', function()
+  vim.opt.relativenumber = false
+end, {
+  desc = 'disables relative line numbering',
+})
