@@ -1,11 +1,5 @@
-
-
-# Prerequisites..
-# zsh
-# nvim
-# tmux
-# kitty (if applicable)
-#
-
+# tmux intialization
 git config --global core.editor nvim
 git submodule update --init --recursive
+
+

@@ -1,10 +1,19 @@
 # Dotfiles
 
-I am Arijit Dasgupta, and these are my Dotfiles.
+These are my Dotfiles. Most of these I copied from somewhere else.
+
+## Prerequisites
+
+### Components
+- Install powerline patched fonts.
+
+### Programs
+zsh
+nvim
+tmux
+starship
+kitty (if applicable)
 
 ## Initial steps
-- Install powerline patched fonts.
 - After starting tmux first time, make sure to press `prefix + I` to install stuff.
-
-## TODO
-- [ ] Move ZSH in the config system
+- The rest do work by itself, I would think.
