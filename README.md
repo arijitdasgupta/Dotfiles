@@ -7,5 +7,4 @@ I am Arijit Dasgupta, and these are my Dotfiles.
 - After starting tmux first time, make sure to press `prefix + I` to install stuff.
 
 ## TODO
-- [ ] Write instructions for submodule
 - [ ] Move ZSH in the config system
