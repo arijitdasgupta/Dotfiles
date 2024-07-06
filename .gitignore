@@ -1,6 +1,5 @@
 # tmux plugins that are installed by TPM, this is obviously quite convoluted way of doing this. But well..
-./tmux/plugins
-
+./tmux/plugins/*
 # Stuff from Other systems that I don't need
 jgit
 configstore
