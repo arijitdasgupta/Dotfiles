@@ -6,3 +6,5 @@ USE_POWERLINE="true"
 HAS_WIDECHARS="false"
 
 eval "$(starship init zsh)"
+
+
