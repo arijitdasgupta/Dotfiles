@@ -8,13 +8,10 @@ HAS_WIDECHARS="false"
 # Default editor to neovim
 EDITOR=nvim
 
-# Starship promt
-eval "$(starship init zsh)"
+# Spaceship configuration
+SPACESHIP_KUBECTL_SHOW=true
 
-# Auto suggestion
-source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Syntax highlighting
-source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Spaceship initialization
+source "$HOME/.config/zsh/spaceship-prompt/spaceship.zsh"
 
 
