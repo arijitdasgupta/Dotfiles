@@ -7,7 +7,6 @@ These are my Dotfiles. Most of these I copied from somewhere else.
 - zsh
 - nvim
 - tmux
-- starship
 - kitty 
 
 # Installation
