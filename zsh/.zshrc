@@ -17,3 +17,9 @@ source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Syntax highlighting
 source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+if [[ -z "${TMUX}" ]]; then
+	tmux new -As0
+fi
+
+
