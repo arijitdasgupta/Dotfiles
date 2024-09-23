@@ -37,3 +37,5 @@ My primary configuration; nvim is essentially [kickstart.nvim](git@github.com:nv
  - Go
  - NodeJS
 
+# TODO
+ - [ ] Update Go debug dependency instructions 
