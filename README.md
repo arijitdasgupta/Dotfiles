@@ -7,8 +7,7 @@ These are my Dotfiles. Most of these I copied from somewhere else.
 - zsh
 - nvim
 - tmux
-- starship
-- kitty 
+- kitty
 
 # Installation
 
@@ -38,4 +37,5 @@ My primary configuration; nvim is essentially [kickstart.nvim](git@github.com:nv
  - NodeJS
 
 # TODO
- - [ ] Update Go debug dependency instructions 
+ - [ ] Figure out debugging in Go, Rust & TypeScript with neovim
+
