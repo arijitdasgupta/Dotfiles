@@ -11,6 +11,9 @@ EDITOR=nvim
 # Spaceship Prompt
 source "$HOME/.config/zsh/spaceship-prompt/spaceship.zsh"
 
+# Alias to prune all local non-checked-out branches
+alias prune-all-branches='git branch | grep -v \* | xargs git branch -D'
+
 # Start tmux if there is no parent TMUX session
 if [[ -z "${TMUX}" ]]; then
 	tmux new -As0
