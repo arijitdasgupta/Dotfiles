@@ -8,16 +8,13 @@ HAS_WIDECHARS="false"
 # Default editor to neovim
 EDITOR=nvim
 
-# Starship promt
-eval "$(starship init zsh)"
+# Spaceship Prompt
+source "$HOME/.config/zsh/spaceship-prompt/spaceship.zsh"
 
-# Auto suggestion
-source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Alias to prune all local non-checked-out branches
+alias prune-all-branches='git branch | grep -v \* | xargs git branch -D'
 
-# Syntax highlighting
-source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
+# Start tmux if there is no parent TMUX session
 if [[ -z "${TMUX}" ]]; then
 	tmux new -As0
 fi
