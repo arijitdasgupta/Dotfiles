@@ -5,6 +5,16 @@ USE_POWERLINE="true"
 #   <U+E0B2><U+E0B0> is not a diamond
 HAS_WIDECHARS="false"
 
+# ZSH History storage & search
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=1000
+setopt SHARE_HISTORY
+bindkey "^R" history-incremental-search-backward
+
+# Disable vi keybindings
+bindkey -e
+
 # Default editor to neovim
 EDITOR=nvim
 
