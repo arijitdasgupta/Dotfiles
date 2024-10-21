@@ -40,6 +40,7 @@ My primary configuration; nvim is essentially [kickstart.nvim](git@github.com:nv
 # TODO
  - [ ] Figure out debugging in Go, Rust & TypeScript with neovim
 
-# Contributing
+# Development 
  - To update to latest submodules: `git submoduile update --remote`.
+ - To reload tmux configuration: `tmux source ~/.config/tmux/tmux.conf`
 
