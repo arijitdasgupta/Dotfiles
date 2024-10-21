@@ -35,7 +35,11 @@ My primary configuration; nvim is essentially [kickstart.nvim](git@github.com:nv
  - Rust
  - Go
  - NodeJS
+ - Deno
 
 # TODO
  - [ ] Figure out debugging in Go, Rust & TypeScript with neovim
+
+# Contributing
+ - To update to latest submodules: `git submoduile update --remote`.
 
