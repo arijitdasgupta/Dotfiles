@@ -9,6 +9,10 @@ These are my Dotfiles. Most of these I copied from somewhere else.
 - tmux
 - kitty
 
+### Tools & Utils
+ - Prettier (`npm install -g prettier`) - OPTIONAL
+ - Prettierd (`npm install -g @fsouza/prettierd`) - OPTIONAL
+
 # Installation
 
 If there is an existing config directory,
