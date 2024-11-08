@@ -53,6 +53,7 @@ My primary configuration; nvim is essentially [kickstart.nvim](git@github.com:nv
 # TODO
 
 - [ ] Figure out debugging in Go, Rust & TypeScript with neovim
+- [ ] Document how to setup and use nushell
 
 # Development
 
