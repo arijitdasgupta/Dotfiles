@@ -12,6 +12,7 @@ These are my Dotfiles. Most of these I copied from somewhere else.
 
 ### Tools & Utils
 
+- Rigrep (`sudo pacman -S ripgrep`) (for Telescope live grep) - OPTIONAL
 - Prettier (`npm install -g prettier`) - OPTIONAL
 - Prettierd (`npm install -g @fsouza/prettierd`) - OPTIONAL
 
