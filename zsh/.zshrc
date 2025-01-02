@@ -25,8 +25,9 @@ source "$HOME/.config/zsh/spaceship-prompt/spaceship.zsh"
 alias prune-all-branches='git branch | grep -v \* | xargs git branch -D'
 
 # Start tmux if there is no parent TMUX session
+# It is done this way because in the PATH there is no tmux yet when the terminal emulator starts.
 if [[ -z "${TMUX}" ]]; then
 	tmux new -As0
 fi
-
+#
 
