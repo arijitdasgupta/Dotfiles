@@ -5,6 +5,7 @@ These are my Dotfiles. Most of these I copied from somewhere else.
 ## Prerequisites
 
 - Hack Nerd Font Mono
+- JetBrains Mono NL & JetBrains Mono
 - zsh
 - nvim
 - tmux
