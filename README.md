@@ -17,8 +17,10 @@ These are my Dotfiles. Most of these I copied from somewhere else.
 - Rigrep (`sudo pacman -S ripgrep`) (for Telescope live grep) - OPTIONAL
 - Prettier (`npm install -g prettier`) - OPTIONAL
 - Prettierd (`npm install -g @fsouza/prettierd`) - OPTIONAL
+- `MasonInstall Prettier` in case you want to use Mason
 
 ### Manual stufff
+
 - Make sure the ghostty binary is in PATH.
 - Make sure zsh is your primary shell.
 - Make sure to include the .zshrc file in the main shell configuration.
