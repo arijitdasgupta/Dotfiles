@@ -1,2 +1,3 @@
 font-family="JetBrains Mono NL"
 font-size=14
+custom-shader=./shaders/cursor-shader.glsl
