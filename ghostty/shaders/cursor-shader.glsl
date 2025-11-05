@@ -70,10 +70,10 @@ vec2 getRectangleCenter(vec4 rectangle) {
     return vec2(rectangle.x + (rectangle.z / 2.), rectangle.y - (rectangle.w / 2.));
 }
 
-const vec4 TRAIL_COLOR = vec4(0., 0.85, 0.161, 1.0); 
+const vec4 TRAIL_COLOR = vec4(0.2, 0.5, 0.8, 1.0); 
 const vec4 CURRENT_CURSOR_COLOR = TRAIL_COLOR;
 const vec4 PREVIOUS_CURSOR_COLOR = TRAIL_COLOR;
-const vec4 TRAIL_COLOR_ACCENT = vec4(0., 1.0, 0., 0.8); // red-orange
+const vec4 TRAIL_COLOR_ACCENT = vec4(0.05, 0.05, 0.3, 1.0);
 const float DURATION = .5;
 const float OPACITY = .2;
 

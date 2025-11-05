@@ -920,11 +920,17 @@ require('lazy').setup({
   },
 
   -- Kanagawa Colourtheme
+  { 'rebelot/kanagawa.nvim' },
+
+  -- Catpuccing Colourtheme
+  { 'catppuccin/nvim', name = 'catppuccin' },
+
+  -- Tokyonight Colourtheme
   {
-    'rebelot/kanagawa.nvim',
+    'folke/tokyonight.nvim',
     priority = 1000,
     init = function()
-      vim.cmd.colorscheme 'kanagawa'
+      vim.cmd.colorscheme 'tokyonight'
       vim.cmd.hi 'Comment gui=none'
     end,
   },
@@ -1107,6 +1113,18 @@ vim.api.nvim_create_user_command('ColorWave', function()
   vim.cmd.colorscheme 'kanagawa-wave'
 end, {
   desc = 'sets colorscheme to kanagawa wave variant',
+})
+
+vim.api.nvim_create_user_command('ColorTokyo', function()
+  vim.cmd.colorscheme 'tokyonight'
+end, {
+  desc = 'sets colorscheme to tokyonight variant',
+})
+
+vim.api.nvim_create_user_command('ColorCatpuccin', function()
+  vim.cmd.colorscheme 'catppuccin'
+end, {
+  desc = 'sets colorscheme to catppuccin variant',
 })
 
 -- Relative line numbering system
