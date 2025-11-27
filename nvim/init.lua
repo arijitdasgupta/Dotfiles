@@ -1139,3 +1139,17 @@ vim.api.nvim_create_user_command('RelativeNumberNo', function()
 end, {
   desc = 'disables relative line numbering',
 })
+
+vim.api.nvim_create_user_command('CopyCurrentFilename', function()
+  local filepath = vim.fn.expand '%'
+  vim.fn.setreg('+', filepath)
+end, {
+  desc = 'copies current filename',
+})
+
+vim.api.nvim_create_user_command('CopyCurrentFilepath', function()
+  local filepath = vim.fn.expand '%'
+  vim.fn.setreg('+', filepath)
+end, {
+  desc = 'copies current file path',
+})

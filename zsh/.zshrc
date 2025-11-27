@@ -18,6 +18,11 @@ bindkey -e
 # Default editor to neovim
 EDITOR=nvim
 
+# Edit command line in editor with Ctrl+o
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^o' edit-command-line
+
 # Spaceship Prompt
 source "$HOME/.config/zsh/spaceship-prompt/spaceship.zsh"
 
