@@ -920,11 +920,17 @@ require('lazy').setup({
   },
 
   -- Kanagawa Colourtheme
+  { 'rebelot/kanagawa.nvim' },
+
+  -- Catpuccing Colourtheme
+  { 'catppuccin/nvim', name = 'catppuccin' },
+
+  -- Tokyonight Colourtheme
   {
-    'rebelot/kanagawa.nvim',
+    'folke/tokyonight.nvim',
     priority = 1000,
     init = function()
-      vim.cmd.colorscheme 'kanagawa'
+      vim.cmd.colorscheme 'tokyonight'
       vim.cmd.hi 'Comment gui=none'
     end,
   },
@@ -1109,6 +1115,18 @@ end, {
   desc = 'sets colorscheme to kanagawa wave variant',
 })
 
+vim.api.nvim_create_user_command('ColorTokyo', function()
+  vim.cmd.colorscheme 'tokyonight'
+end, {
+  desc = 'sets colorscheme to tokyonight variant',
+})
+
+vim.api.nvim_create_user_command('ColorCatpuccin', function()
+  vim.cmd.colorscheme 'catppuccin'
+end, {
+  desc = 'sets colorscheme to catppuccin variant',
+})
+
 -- Relative line numbering system
 vim.api.nvim_create_user_command('RelativeNumberYes', function()
   vim.opt.relativenumber = true
@@ -1120,4 +1138,18 @@ vim.api.nvim_create_user_command('RelativeNumberNo', function()
   vim.opt.relativenumber = false
 end, {
   desc = 'disables relative line numbering',
+})
+
+vim.api.nvim_create_user_command('CopyCurrentFilename', function()
+  local filepath = vim.fn.expand '%'
+  vim.fn.setreg('+', filepath)
+end, {
+  desc = 'copies current filename',
+})
+
+vim.api.nvim_create_user_command('CopyCurrentFilepath', function()
+  local filepath = vim.fn.expand '%'
+  vim.fn.setreg('+', filepath)
+end, {
+  desc = 'copies current file path',
 })
