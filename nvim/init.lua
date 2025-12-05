@@ -937,19 +937,25 @@ require('lazy').setup({
   },
 
   -- Kanagawa Colourtheme
-  { 'rebelot/kanagawa.nvim' },
+  {
+    'rebelot/kanagawa.nvim',
+
+    priority = 1000,
+    init = function()
+      vim.cmd.colorscheme 'kanagawa-wave'
+      vim.cmd.hi 'Comment gui=none'
+    end,
+  },
 
   -- Catpuccing Colourtheme
-  { 'catppuccin/nvim', name = 'catppuccin' },
+  {
+    'catppuccin/nvim',
+    name = 'catppuccin',
+  },
 
   -- Tokyonight Colourtheme
   {
     'folke/tokyonight.nvim',
-    priority = 1000,
-    init = function()
-      vim.cmd.colorscheme 'tokyonight'
-      vim.cmd.hi 'Comment gui=none'
-    end,
   },
 
   -- Highlight todo, notes, etc in comments
