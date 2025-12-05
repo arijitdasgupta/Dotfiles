@@ -481,10 +481,18 @@ require('lazy').setup({
     dependencies = { 'nvim-tree/nvim-web-devicons', 'MaximilianLloyd/ascii.nvim' },
     config = function()
       local ascii = require 'ascii'
+      local header = ascii.art.text.neovim.sharp
+      local padded_header = {}
+      for i = 1, 12 do
+        table.insert(padded_header, '')
+      end
+      for _, line in ipairs(header) do
+        table.insert(padded_header, line)
+      end
       require('dashboard').setup {
         theme = 'doom',
         config = {
-          header = ascii.get_random_global(),
+          header = padded_header,
           center = {
             {
               icon = '  ',
