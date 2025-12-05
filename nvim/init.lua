@@ -478,9 +478,9 @@ require('lazy').setup({
   },
   {
     'nvimdev/dashboard-nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    dependencies = { 'nvim-tree/nvim-web-devicons', 'MaximilianLloyd/ascii.nvim' },
     config = function()
-      require 'ascii'
+      local ascii = require 'ascii'
       require('dashboard').setup {
         theme = 'doom',
         config = {
