@@ -1,0 +1,73 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](fg:7 bg:none)\
+[$directory](fg:8 bg:7)\
+[](fg:7 bg:15)\
+[ $git_branch$git_status](fg:8 bg:15)\
+[](fg:15 bg:7)\
+[ $aws$kubernetes$golang$rust$scala](fg:8 bg:7)\
+[](fg:7 bg:15)\
+[$battery](fg:1 bg:15)\
+[$cmd_duration$time](fg:8 bg:15)\
+[ ](fg:15 bg:none)\
+$all$character """
+
+# Inserts a blank line between shell prompts
+add_newline = false
+command_timeout = 1000
+
+[directory]
+format="$path$read_only"
+truncation_length = 8
+truncation_symbol = '…/'
+
+[battery]
+format="$symbol$percentage "
+
+[[battery.display]]
+threshold = 10
+style = 'bold red'
+
+[git_branch]
+format="$symbol$branch(:$remote_branch)"
+
+[git_status]
+format=' $all_status$ahead_behind'
+
+[aws]
+format=' $symbol($profile )(\($region\) )(\[$duration\] )'
+symbol=" "
+
+[golang]
+format=' $symbol($version )'
+symbol=" "
+
+[rust]
+format=' $symbol($version )'
+symbol=" "
+
+[scala]
+format=' $symbol($version )'
+symbol=" "
+
+[kubernetes]
+format=' $symbol$context( \($namespace\))'
+symbol="󱃾 "
+disabled=false
+
+[time]
+format="$time"
+disabled=false
+
+[cmd_duration]
+format='took $duration '
+
+[character]
+success_symbol="[ ](bold green)"
+error_symbol="[ ](bold red)"
+
+[fill]
+symbol=" "
+style="bold fg:15"

@@ -23,11 +23,9 @@ autoload -U edit-command-line
 zle -N edit-command-line
 bindkey '^o' edit-command-line
 
-# Spaceship Prompt
-source "$HOME/.config/zsh/spaceship-prompt/spaceship.zsh"
+# Starship Prompt
+eval "$(starship init zsh)"
 
 # Alias to prune all local non-checked-out branches
 alias prune-all-branches='git branch | grep -v \* | xargs git branch -D'
-
-export SPACESHIP_KUBECTL_SHOW=true
 

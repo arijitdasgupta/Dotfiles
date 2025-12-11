@@ -47,7 +47,12 @@ That should fetch everything you need.
 
 ## ZSH
 
-- Add `source ~/.config/zsh/.zshrc` to your `~/.zshrc` file.
+- Add `source ~/.config/zsh/.zshrc` to your `~/.zshrc` file (required for tmux panes and non-login shells).
+- Add `source ~/.config/zsh/.zshrc` to your `~/.zprofile` file (for login shells).
+- Starship prompt is configured via `starship.toml` with custom sections and styling.
+- Install Starship:
+  - macOS: `brew install starship`
+  - Arch Linux: `sudo pacman -S starship`
 
 ## Notes
 

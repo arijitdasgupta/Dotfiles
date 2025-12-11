@@ -4,6 +4,3 @@
 [submodule "tmux/plugins/catppuccin"]
 	path = tmux/plugins/catppuccin
 	url = git@github.com:catppuccin/tmux.git
-[submodule "zsh/spaceship-prompt"]
-	path = zsh/spaceship-prompt
-	url = https://github.com/spaceship-prompt/spaceship-prompt.git
