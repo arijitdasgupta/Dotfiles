@@ -358,14 +358,6 @@ require('lazy').setup({
     },
   },
 
-  -- ASCII Art collection
-  {
-    'MaximilianLloyd/ascii.nvim',
-    dependencies = {
-      'MunifTanjim/nui.nvim',
-    },
-  },
-
   { -- Fuzzy Finder (files, lsp, etc)
     'nvim-telescope/telescope.nvim',
     event = 'VimEnter',
@@ -480,19 +472,11 @@ require('lazy').setup({
     'nvimdev/dashboard-nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons', 'MaximilianLloyd/ascii.nvim' },
     config = function()
-      local ascii = require 'ascii'
-      local header = ascii.art.text.neovim.sharp
-      local padded_header = {}
-      for i = 1, 12 do
-        table.insert(padded_header, '')
-      end
-      for _, line in ipairs(header) do
-        table.insert(padded_header, line)
-      end
+      local header = require('eevee').Eevee
       require('dashboard').setup {
         theme = 'doom',
         config = {
-          header = padded_header,
+          header = header,
           center = {
             {
               icon = '  ',
