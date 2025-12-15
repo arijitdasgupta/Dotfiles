@@ -929,6 +929,7 @@ require('lazy').setup({
           'mason',
           'neo-tree',
           'Trouble',
+          'dashboard',
           'notify',
           'terminal',
         },
@@ -942,7 +943,7 @@ require('lazy').setup({
 
     priority = 1000,
     init = function()
-      vim.cmd.colorscheme 'kanagawa-wave'
+      vim.cmd.colorscheme 'kanagawa-dragon'
       vim.cmd.hi 'Comment gui=none'
     end,
   },
