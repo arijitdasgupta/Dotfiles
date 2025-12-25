@@ -1,6 +1,6 @@
 # Dotfiles
 
-These are my Dotfiles. Most of these I copied from somewhere else.
+These are my Dotfiles. Most of these I copied from somewhere else, mostly from [jan-xyz](https://github.com/jan-xyz/Dotfiles).
 
 ## Prerequisites
 
@@ -8,7 +8,6 @@ These are my Dotfiles. Most of these I copied from somewhere else.
 - zsh
 - nvim
 - tmux
-- kitty (not going to use it for long)
 - ghostty
 
 ### Tools & Utils
@@ -63,11 +62,11 @@ My primary configuration; nvim is essentially [kickstart.nvim](git@github.com:nv
 - Go
 - NodeJS
 - Deno
+- Zig
 
 # TODO
 
 - [ ] Figure out debugging in Go, Rust & TypeScript with neovim
-- [ ] Document how to setup and use nushell
 
 # Development
 
