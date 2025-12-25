@@ -42,7 +42,7 @@ Then run,
 sh init-script.sh
 ```
 
-That should fetch everything you need.
+That should fetch everything you need, including all git submodules.
 
 ## ZSH
 

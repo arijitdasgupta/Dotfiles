@@ -4,3 +4,6 @@
 [submodule "tmux/plugins/catppuccin"]
 	path = tmux/plugins/catppuccin
 	url = git@github.com:catppuccin/tmux.git
+[submodule "ghostty/shaders/special-shaders"]
+	path = ghostty/shaders/special-shaders
+	url = https://github.com/0xhckr/ghostty-shaders
